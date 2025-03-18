@@ -1,0 +1,8 @@
+ <motion.div
+          className="text-red-600 text-6xl font-bold"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1.2 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+        >
+          <button >VISHNU</button>
+        </motion.div>
