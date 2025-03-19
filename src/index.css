@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "NetflixSans";
+  src: url("/src/assets/NetflixSans-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-netflix {
+  font-family: "NetflixSans", sans-serif;
+}

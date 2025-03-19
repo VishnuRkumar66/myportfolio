@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import NetflixIntro from "./components/NetflixIntro";
+import Users from "./components/Users";
 
 const App = () => {
+  const [start, setStart] = useState(false);
+
   return (
-    <div>
-      <NetflixIntro />
+    <div className="bg-black  font-netflix">
+      {start ? <Users /> : <NetflixIntro setStart={setStart} />}
     </div>
   );
 };
