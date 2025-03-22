@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Popup from "reactjs-popup";
-const Users = () => {
+const Users = ({ setUserLoggedIn, setUserName }) => {
   const [Users, setUsers] = useState(["Recruiters", "Friends", "Explorers"]);
   const [newUser, setNewUser] = useState(" ");
   const [PopUp, setPopUp] = useState(false);
@@ -13,6 +13,10 @@ const Users = () => {
       setPopUp(false);
     }
   }
+  function UserClicked(userName) {
+    setUserLoggedIn(true);
+    setUserName(userName);
+  }
 
   return (
     <div className=" w-screen h-screen flex justify-center items-center text-red-700 ">
@@ -23,6 +27,7 @@ const Users = () => {
           {Users.map((user, index) => (
             <div
               key={index}
+              onClick={() => UserClicked(user)}
               className="border-2 m-2 w-[120px] h-[120px] flex items-center justify-center text-center rounded bg-gray-950 cursor-pointer hover:border-[3px] hover:bg-gray-900"
             >
               <p>{user}</p>

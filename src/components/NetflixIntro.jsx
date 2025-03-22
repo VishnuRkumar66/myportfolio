@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import netflixSound from "../assets/netflix.mp3";
 
@@ -27,7 +27,7 @@ const NetflixIntro = ({ setStart }) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          ENTER.!
+          <p>click me</p>
         </motion.button>
       ) : (
         <motion.div
