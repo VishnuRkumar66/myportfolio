@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Popup from "reactjs-popup";
 const Users = ({ setUserLoggedIn, setUserName }) => {
   const [Users, setUsers] = useState(["Recruiters", "Friends", "Explorers"]);
-  const [newUser, setNewUser] = useState(" ");
+  const [newUser, setNewUser] = useState("");
   const [PopUp, setPopUp] = useState(false);
   function addUser() {
     if (newUser.trim() === "") {
