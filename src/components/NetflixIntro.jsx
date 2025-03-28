@@ -12,7 +12,7 @@ const NetflixIntro = ({ setStart }) => {
     audio.play();
 
     const intervalId = setTimeout(() => {
-      setStart(true);
+      setStart(1);
     }, 5000);
 
     return () => clearTimeout(intervalId);

@@ -2,9 +2,9 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <>
-      <p>projects</p>
-    </>
+    <div className="w-screen bg-red-400 ">
+      <p>project</p>
+    </div>
   );
 };
 

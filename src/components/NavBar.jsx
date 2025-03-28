@@ -5,86 +5,72 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const navigation = [
-    { name: "home", href: "#", current: false },
-    { name: "professional", href: "#", current: false },
-    { name: "skills", href: "#", current: false },
-    { name: "projects", href: "#", current: false },
-    { name: "Hire Me", href: "#", current: false },
-    { name: "Log Out", href: "#", current: false },
+    { name: "Home", href: "/" },
+    { name: "Timeline", href: "/Timeline" },
+    { name: "Skills", href: "/skills" },
+    { name: "Projects", href: "/projects" },
+    { name: "Hire Me", href: "/contact" },
+    
   ];
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
-  return (
-    <>
-      <Disclosure as="nav" className="bg-black fixed w-screen">
-        <p className="text-red-700 fixed top-[18px] left-3 font-bold text-lg">
-          VRK
-        </p>
 
-        <div>
-          <div className="relative  flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 right-0 flex  sm:hidden">
-              {/* Mobile menu button*/}
-              <DisclosureButton
-                className="group m-3 rounded-md p-2 text-white  w-[40px]
-              h-[40px] hover:bg-gray-600 hover:text-white"
-              >
-                <Bars3Icon
-                  aria-hidden="true"
-                  className="block size-6 group-data-open:hidden "
-                />
-                <XMarkIcon
-                  aria-hidden="true"
-                  className="hidden size-6 group-data-open:block"
-                />
+  const location = useLocation();
+
+  return (
+    <Disclosure as="nav" className="bg-black fixed w-screen z-50 h-16">
+      {({ open, close }) => (
+        <>
+          <p className="text-red-700 flex  fixed left-3 font-bold pt-2 text-[30px] h-16">
+            VRK
+          </p>
+
+          <div className="relative flex h-16 items-center ml-3 justify-between px-4">
+            <div className="absolute inset-y-0 right-0 flex sm:hidden">
+              <DisclosureButton className="group m-3 rounded-md p-2 text-white w-[40px] h-[40px] hover:bg-gray-600 hover:text-white">
+                {open ? (
+                  <XMarkIcon className="size-6" aria-hidden="true" />
+                ) : (
+                  <Bars3Icon className="size-6" aria-hidden="true" />
+                )}
               </DisclosureButton>
             </div>
 
-            <div className="  sm:items-stretch sm:justify-start">
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="font-sans ml-7">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className={classNames(
-                        item.current
-                          ? "bg-gray-900 "
-                          : "text-gray-300 hover:text-red-600 ",
-                        " ml-5 p-2   "
-                      )}
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <div className="hidden sm:flex sm:items-center ml-18 ">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`ml-3 p-2 transition duration-300 ${
+                    location.pathname === item.href
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:text-red-600"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
           </div>
-        </div>
 
-        <DisclosurePanel className="sm:hidden">
-          <div>
+          {/* Mobile Menu */}
+          <DisclosurePanel className="sm:hidden bg-black text-white px-4 pb-4">
             {navigation.map((item) => (
-              <DisclosureButton
+              <Link
                 key={item.name}
-                href={item.href}
-                className={classNames(
-                  item.current ? "" : "text-white hover:text-red-700 ",
-                  " block p-2"
-                )}
+                to={item.href}
+                className="block p-2 hover:text-red-600"
+                onClick={() => close()}
               >
                 {item.name}
-              </DisclosureButton>
+              </Link>
             ))}
-          </div>
-        </DisclosurePanel>
-      </Disclosure>
-    </>
+          </DisclosurePanel>
+        </>
+      )}
+    </Disclosure>
   );
 };
 

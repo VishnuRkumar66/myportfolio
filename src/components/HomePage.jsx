@@ -6,26 +6,18 @@ import experience from "../assets/experience.png";
 import project from "../assets/project.png";
 import hobbies from "../assets/hobbies.jpg";
 import contact from "../assets/contact.png";
+import { Link } from "react-router-dom";
 const MainPage = ({ username }) => {
-  const navigation = [
-    { name: "home", href: "#", current: false },
-    { name: "professional", href: "#", current: false },
-    { name: "skills", href: "#", current: false },
-    { name: "projects", href: "#", current: false },
-    { name: "Hire Me", href: "#", current: false },
-    { name: "Log Out", href: "#", current: false },
-  ];
-
   const bgImagesTop = [experience, certificate, project, skill];
   const bgImagesBottom = [skill, hobbies, contact];
 
   const [topItems] = useState([
     "experience",
-    "certificates",
+    "certificate",
     "projects",
     "skills",
   ]);
-  const [bottomItems] = useState(["skills", "hobbies", "contact me"]);
+  const [bottomItems] = useState(["skills", "hobbies", "contact_me"]);
 
   return (
     <div className="w-screen bg-black flex flex-col ">
@@ -46,12 +38,17 @@ const MainPage = ({ username }) => {
           </p>
 
           <div className="flex gap-5 mt-3 ">
-            <button className="bg-white  text-black rounded px-4 py-2 w-[150px] shadow-md hover:bg-gray-200 cursor-pointer">
+            <button className="bg-white  text-black rounded px-4 py-2 w-[150px] shadow-md hover:bg-gray-200 text-[20px] cursor-pointer">
               ▶️ Resume
             </button>
             <button
-              href="https://www.linkedin.com/in/vishnu-r-kumar66"
-              className="bg-black/50 text-white text-xl w-[150px] rounded px-4 py-2 shadow-md hover:bg-gray-700 cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/vishnu-r-kumar66",
+                  "_blank"
+                )
+              }
+              className="bg-black/50 text-white text-xl w-[150px] rounded px-4 py-2 shadow-md text-[20px] hover:bg-gray-700 cursor-pointer"
             >
               ⓘ LinkedIn
             </button>
@@ -62,18 +59,20 @@ const MainPage = ({ username }) => {
         <p>{`Today's Top Picks for ${username}`}</p>
         <div className="flex  flex-wrap m-7 gap-4">
           {topItems.map((item, index) => (
-            <div
-              key={index}
-              className={` h-[200px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
-              style={{
-                backgroundImage: `url(${
-                  bgImagesTop[index % bgImagesTop.length]
-                })`,
-                backgroundSize: "cover",
-              }}
-            >
-              <p className="bg-gray-900/60 text-[15px] rounded p-2">{item}</p>
-            </div>
+            <Link to={`/${item}`}>
+              <div
+                key={index}
+                className={` h-[190px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
+                style={{
+                  backgroundImage: `url(${
+                    bgImagesTop[index % bgImagesTop.length]
+                  })`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <p className="bg-gray-900/60 text-[15px] rounded p-2">{item}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -81,18 +80,20 @@ const MainPage = ({ username }) => {
         <p>{`Continue Watching for ${username}`}</p>
         <div className="flex flex-wrap m-[18px]  gap-7">
           {bottomItems.map((item, index) => (
-            <div
-              key={index}
-              className={` h-[200px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
-              style={{
-                backgroundImage: `url(${
-                  bgImagesBottom[index % bgImagesBottom.length]
-                })`,
-                backgroundSize: "cover",
-              }}
-            >
-              <p className="bg-gray-900/60 text-[15px] rounded p-2">{item}</p>
-            </div>
+            <Link to={`/${item}`}>
+              <div
+                key={index}
+                className={` h-[200px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
+                style={{
+                  backgroundImage: `url(${
+                    bgImagesBottom[index % bgImagesBottom.length]
+                  })`,
+                  backgroundSize: "cover",
+                }}
+              >
+                <p className="bg-gray-900/60 text-[15px] rounded p-2">{item}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

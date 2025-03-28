@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { FaRegPlusSquare } from "react-icons/fa";
 import Popup from "reactjs-popup";
-const Users = ({ setUserLoggedIn, setUserName }) => {
+const Users = ({ setStart, setUserName }) => {
   const [Users, setUsers] = useState(["Recruiters", "Friends", "Explorers"]);
   const [newUser, setNewUser] = useState("");
   const [PopUp, setPopUp] = useState(false);
@@ -14,7 +15,7 @@ const Users = ({ setUserLoggedIn, setUserName }) => {
     }
   }
   function UserClicked(userName) {
-    setUserLoggedIn(true);
+    setStart(2);
     setUserName(userName);
   }
 
@@ -23,12 +24,12 @@ const Users = ({ setUserLoggedIn, setUserName }) => {
       <p className="absolute top-1 left-1 ">VISHNU R KUMAR</p>
       <div>
         <p className="text-center text-white text-2xl p-2">Who's watching.?</p>
-        <div className="flex">
+        <div className="flex flex-wrap justify-center">
           {Users.map((user, index) => (
             <div
               key={index}
               onClick={() => UserClicked(user)}
-              className="border-2 m-2 w-[120px] h-[120px] flex items-center justify-center text-center rounded bg-gray-950 cursor-pointer hover:border-[3px] hover:bg-gray-900"
+              className="border-2 m-2 w-[120px] h-[120px] flex items-center justify-center text-center rounded bg-gray-950 cursor-pointer transition duration-300 ease-out hover:border-[3px] hover:bg-gray-900"
             >
               <p>{user}</p>
             </div>
@@ -37,8 +38,10 @@ const Users = ({ setUserLoggedIn, setUserName }) => {
 
         <button
           onClick={() => setPopUp(true)}
-          className=" rounded p-2 mt-3 m-auto flex cursor-pointer  bg-gray-900 hover:bg-gray-800 w-[50px] h-[50px]  bg-[url(./assets/add.png)] bg-contain"
-        ></button>
+          className=" rounded p-1 mt-3 m-auto flex cursor-pointer  bg-gray-900 hover:bg-gray-800 transition duration-300 ease-out w-[50px] h-[50px]  bg-contain text-center"
+        >
+          <FaRegPlusSquare className="  text-[42px]" />
+        </button>
 
         <Popup
           open={PopUp}
