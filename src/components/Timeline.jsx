@@ -2,6 +2,18 @@ import React from "react";
 
 const experiences = [
   {
+    role: "Frontend Developer",
+    company: "Self-Learning",
+    duration: "Sep 2024 - Present",
+    skills: ["React", "Tailwind CSS", "Python", "Data Structures & Algorithms"],
+    description: [
+      "Studied and mastered the React framework, including key concepts like hooks and state management.",
+      "Developed responsive and user-friendly web applications using React and Tailwind CSS.",
+      "Practiced problem-solving with Data Structures & Algorithms in Python to strengthen coding skills.",
+    ],
+  },
+
+  {
     role: "Operations Assistant",
     company: "BlueDart DHL",
     duration: "Dec 2022 - Jan 2025",
@@ -32,9 +44,9 @@ const experiences = [
     skills: ["C", "C++", "DBMS", "DCP", "OOPS", "Java", "Cloud Computing"],
     description: [
       "My semester journey started here, consisting of 6 semesters.",
-      "I studied the subjects mentioned above along with other subjects such as PHP and MySQL.",
-      "As part of my coursework, I worked on a Student Management System that included both frontend and backend development.",
-      "I took on the role of Team Leader in the project and  personally developed the frontend using plain HTML, CSS, and JavaScript",
+      "Studied the subjects mentioned above along with other subjects such as PHP and MySQL.",
+      "As part of my coursework,Worked on a Student Management System that included both frontend and backend development.",
+      "Took on the role of Team Leader in the project and  personally developed the frontend using plain HTML, CSS, and JavaScript",
     ],
   },
 ];
