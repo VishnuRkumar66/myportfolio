@@ -28,16 +28,8 @@ const Skills = () => {
       pic: <FaReact className="text-blue-500 text-[25px]" />,
       desc: "Frontend framework",
     },
-    {
-      title: "React",
-      pic: <FaReact className="text-blue-500 text-[25px]" />,
-      desc: "Frontend framework",
-    },
-    {
-      title: "React",
-      pic: <FaReact className="text-blue-500 text-[25px]" />,
-      desc: "Frontend framework",
-    },
+    
+    
   ];
 
   return (
