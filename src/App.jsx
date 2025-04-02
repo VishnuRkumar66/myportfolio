@@ -28,7 +28,10 @@ const App = () => {
             <NavBar />
             <div className="pb-16"></div>
             <Routes>
-              <Route path="/" element={<HomePage username={userName} />} />
+              <Route
+                path="/myportfolio"
+                element={<HomePage username={userName} />}
+              />
               <Route path="/certificate" element={<Certificates />} />
               <Route path="/timeline" element={<Timeline />} />
               <Route path="/experience" element={<Experience />} />

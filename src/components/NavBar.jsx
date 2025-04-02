@@ -9,12 +9,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const navigation = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/myportfolio" },
     { name: "Timeline", href: "/Timeline" },
     { name: "Skills", href: "/skills" },
     { name: "Projects", href: "/projects" },
     { name: "Hire Me", href: "/contact" },
-    
   ];
 
   const location = useLocation();
