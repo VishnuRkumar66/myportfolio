@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import skill from "../assets/skill.png";
 import certificate from "../assets/certificates.png";
 import experience from "../assets/experience.png";
