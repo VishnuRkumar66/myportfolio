@@ -41,7 +41,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-screen text-center">
+    <div className="w-screen min-h-screen text-center">
       {/* Section Title */}
       <div className="flex items-center justify-center p-3">
         <p className="text-2xl w-fit border-b-2 border-b-red-700">Skills</p>
