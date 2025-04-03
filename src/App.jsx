@@ -5,12 +5,12 @@
 // import HomePage from "./components/HomePage";
 // import NavBar from "./components/NavBar";
 // import Certificates from "./components/Certificates";
-// import Experience from "./components/Experience";
 // import Hobbies from "./components/Hobbies";
 // import Projects from "./components/Projects";
 // import Skills from "./components/Skills";
-// import Timeline from "./components/Timeline";
 // import Contact from "./components/Contact";
+// import Experience from "./components/Experience";
+// import Positives from "./components/Positives";
 
 // const App = () => {
 //   const [start, setStart] = useState(0);
@@ -33,9 +33,10 @@
 //                 element={<HomePage username={userName} />}
 //               />
 //               <Route path="/certificate" element={<Certificates />} />
-//               <Route path="/timeline" element={<Timeline />} />
-//               <Route path="/experience" element={<Experience />} />
 //               <Route path="/projects" element={<Projects />} />
+//               <Route path="/timeline" element={<Experience />} />
+//               <Route path="/experience" element={<Experience />} />
+//               <Route path="/positives" element={<Positives />} />
 //               <Route path="/skills" element={<Skills />} />
 //               <Route path="/hobbies" element={<Hobbies />} />
 //               <Route path="/contact" element={<Contact />} />
@@ -64,12 +65,13 @@
 // };
 
 // export default App;
+
 import React from "react";
-import Timeline from "./components/Timeline";
+import Experience from "./components/Experience";
 const App = () => {
   return (
     <div className="bg-black w-screen text-white">
-      <Timeline />
+      <Experience />
     </div>
   );
 };

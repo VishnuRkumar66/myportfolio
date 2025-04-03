@@ -5,10 +5,11 @@ import experience from "../assets/experience.png";
 import project from "../assets/project.png";
 import hobbies from "../assets/hobbies.jpg";
 import contact from "../assets/contact.png";
+import positive from "../assets/positive.png";
 import { Link } from "react-router-dom";
 const MainPage = ({ username }) => {
   const bgImagesTop = [experience, certificate, project, skill];
-  const bgImagesBottom = [skill, hobbies, contact];
+  const bgImagesBottom = [positive, hobbies, contact];
 
   const [topItems] = useState([
     "experience",
@@ -16,7 +17,7 @@ const MainPage = ({ username }) => {
     "projects",
     "skills",
   ]);
-  const [bottomItems] = useState(["skills", "hobbies", "contact_me"]);
+  const [bottomItems] = useState(["Positives", "hobbies", "contact_me"]);
 
   return (
     <div className="w-screen bg-black flex flex-col ">
