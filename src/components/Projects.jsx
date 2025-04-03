@@ -1,10 +1,118 @@
 import React from "react";
-import std from "../assets/std.png";
-import { FaHtml5, FaCss3Alt, FaJs, FaDatabase } from "react-icons/fa";
+
+import flip from "../assets/flip.png";
+import data from "../assets/data.png";
+import port from "../assets/port.png";
+
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaDatabase,
+  FaBootstrap,
+  FaReact,
+  FaLeaf,
+  FaGitSquare,
+  FaBolt,
+} from "react-icons/fa";
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 const Projects = () => {
   const projects = [
     {
-      pic: std,
+      pic: data,
+      Name: "Student Database",
+      Desc: "Built a website for storing data of students in my class around my diploma Years. This website's frond-end is built using pure HTML and JavaScript. I am in charge for the website's Front end.",
+      tools: [
+        {
+          icon: <FaHtml5 />,
+          Name: "HTML",
+        },
+        {
+          icon: <FaCss3Alt />,
+          Name: "CSS",
+        },
+        {
+          icon: <FaJs />,
+          Name: "JavaScript",
+        },
+        {
+          icon: <FaDatabase />,
+          Name: "MySQL",
+        },
+      ],
+    },
+    {
+      pic: flip,
+      Name: "E commerce Website",
+      Desc: "Developed an e-commerce website inspired by Flipkart, allowing users to browse products, add items to the cart, and proceed to checkout. The front-end was built using pure HTML, CSS, and JavaScript, ensuring a responsive and user-friendly interface.",
+      tools: [
+        {
+          icon: <FaHtml5 />,
+          Name: "HTML",
+        },
+        {
+          icon: <FaCss3Alt />,
+          Name: "CSS",
+        },
+        {
+          icon: <FaJs />,
+          Name: "JavaScript",
+        },
+        {
+          icon: <FaBootstrap />,
+          Name: "Bootstrap",
+        },
+      ],
+    },
+    {
+      pic: port,
+      Name: "Personal Portfolio",
+      Desc: "Created a personal portfolio website to showcase my skills, projects, and experience in web development. Designed a clean and responsive UI using React , ensuring smooth navigation and a modern look. Implemented interactive components to enhance user engagement and accessibility.",
+      tools: [
+        {
+          icon: <FaReact />,
+          Name: "React",
+        },
+        {
+          icon: <FaLeaf />,
+          Name: "Tailwind",
+        },
+        {
+          icon: <TbBrandFramerMotion />,
+          Name: "Framer Motion",
+        },
+        {
+          icon: <FaBolt />,
+          Name: "Vite",
+        },
+      ],
+    },
+    {
+      pic: data,
+      Name: "Arcade Game",
+      Desc: "Developed a collection of 5+ simple arcade games using React+vite. Designed engaging gameplay mechanics and responsive controls for an immersive user experience. Implemented game logic for showcasing my knowledge and creative UI for showcasing my creativity.",
+      tools: [
+        {
+          icon: <FaReact />,
+          Name: "React",
+        },
+        {
+          icon: <FaLeaf />,
+          Name: "Tailwind",
+        },
+        {
+          icon: <FaBolt />,
+          Name: "Vite",
+        },
+        {
+          icon: <FaGitSquare />,
+          Name: "GitHub",
+        },
+      ],
+    },
+    {
+      pic: data,
       Name: "Student Database",
       Desc: "Built a website for storing data of students in my class around my diploma Years. This website's frond-end is built using pure HTML and JavaScript. I am in charge for the website's Front end.",
       tools: [
