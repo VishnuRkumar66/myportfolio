@@ -3,6 +3,7 @@ import flip from "../assets/flip.png";
 import data from "../assets/data.png";
 import port from "../assets/port.png";
 import arc from "../assets/arcade.png";
+import track from "../assets/track.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -21,7 +22,7 @@ import { FaClover } from "react-icons/fa6";
 const Projects = () => {
   const projects = [
     {
-      pic: port,
+      pic: track,
       Name: "IP Address Tracker",
       Desc: "Created a web app that helps you find the location of any IP address. When you open the app, it automatically detects your current IP address and shows details like Your city and country,Your internet provider (ISP) ,time zone ,your location on map.You can also search other IP addresses.",
       tools: [
