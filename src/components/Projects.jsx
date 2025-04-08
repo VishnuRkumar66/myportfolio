@@ -1,9 +1,8 @@
 import React from "react";
-
 import flip from "../assets/flip.png";
 import data from "../assets/data.png";
 import port from "../assets/port.png";
-
+import arc from "../assets/arcade.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,54 +13,33 @@ import {
   FaLeaf,
   FaGitSquare,
   FaBolt,
+  FaWrench,
 } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { FaClover } from "react-icons/fa6";
 
 const Projects = () => {
   const projects = [
     {
-      pic: data,
-      Name: "Student Database",
-      Desc: "Built a website for storing data of students in my class around my diploma Years. This website's frond-end is built using pure HTML and JavaScript. I am in charge for the website's Front end.",
+      pic: port,
+      Name: "IP Address Tracker",
+      Desc: "Created a web app that helps you find the location of any IP address. When you open the app, it automatically detects your current IP address and shows details like Your city and country,Your internet provider (ISP) ,time zone ,your location on map.You can also search other IP addresses.",
       tools: [
         {
-          icon: <FaHtml5 />,
-          Name: "HTML",
+          icon: <FaReact />,
+          Name: "React",
         },
         {
-          icon: <FaCss3Alt />,
-          Name: "CSS",
+          icon: <FaLeaf />,
+          Name: "Tailwind",
         },
         {
-          icon: <FaJs />,
-          Name: "JavaScript",
+          icon: <FaClover />,
+          Name: "Leaflet",
         },
         {
-          icon: <FaDatabase />,
-          Name: "MySQL",
-        },
-      ],
-    },
-    {
-      pic: flip,
-      Name: "E commerce Website",
-      Desc: "Developed an e-commerce website inspired by Flipkart, allowing users to browse products, add items to the cart, and proceed to checkout. The front-end was built using pure HTML, CSS, and JavaScript, ensuring a responsive and user-friendly interface.",
-      tools: [
-        {
-          icon: <FaHtml5 />,
-          Name: "HTML",
-        },
-        {
-          icon: <FaCss3Alt />,
-          Name: "CSS",
-        },
-        {
-          icon: <FaJs />,
-          Name: "JavaScript",
-        },
-        {
-          icon: <FaBootstrap />,
-          Name: "Bootstrap",
+          icon: <FaWrench />,
+          Name: "Rest API",
         },
       ],
     },
@@ -89,7 +67,7 @@ const Projects = () => {
       ],
     },
     {
-      pic: data,
+      pic: arc,
       Name: "Arcade Game",
       Desc: "Developed a collection of 5+ simple arcade games using React+vite. Designed engaging gameplay mechanics and responsive controls for an immersive user experience. Implemented game logic for showcasing my knowledge and creative UI for showcasing my creativity.",
       tools: [
@@ -108,6 +86,29 @@ const Projects = () => {
         {
           icon: <FaGitSquare />,
           Name: "GitHub",
+        },
+      ],
+    },
+    {
+      pic: flip,
+      Name: "E commerce Website",
+      Desc: "Developed an e-commerce website inspired by Flipkart, allowing users to browse products, add items to the cart, and proceed to checkout. The front-end was built using pure HTML, CSS, and JavaScript, ensuring a responsive and user-friendly interface.",
+      tools: [
+        {
+          icon: <FaHtml5 />,
+          Name: "HTML",
+        },
+        {
+          icon: <FaCss3Alt />,
+          Name: "CSS",
+        },
+        {
+          icon: <FaJs />,
+          Name: "JavaScript",
+        },
+        {
+          icon: <FaBootstrap />,
+          Name: "Bootstrap",
         },
       ],
     },

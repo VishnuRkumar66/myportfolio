@@ -16,7 +16,7 @@ const experiences = [
   {
     role: "Operations Assistant",
     company: "BlueDart DHL",
-    duration: "Dec 2022 - Jan 2025",
+    duration: "Dec 2021 - Jan 2025",
     skills: ["C2PC", "C2NG", "Customer interaction", "Data Handling"],
     description: [
       "After the COVID-19 pandemic, I worked at BlueDart DHL, where I gained hands-on experience with C2PC and C2NG, software used for data handling and various operations.",
