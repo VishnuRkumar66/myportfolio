@@ -8,6 +8,7 @@ import {
   FaBootstrap,
   FaLeaf,
   FaGitSquare,
+  FaBolt,
 } from "react-icons/fa";
 
 const Skills = () => {
@@ -46,13 +47,18 @@ const Skills = () => {
     },
     {
       title: "TailWind",
-      pic: <FaLeaf className="text-[25px] text-green-600 " />,
+      pic: <FaLeaf className="text-[25px] text-green-800 " />,
       desc: "CSS library",
     },
     {
       title: "GIT",
-      pic: <FaGitSquare className="text-[25px] text-green-600 " />,
+      pic: <FaGitSquare className="text-[25px] text-green-500 " />,
       desc: "Version control System",
+    },
+    {
+      title: "Vite",
+      pic: <FaBolt className="text-[25px] text-violet-700 " />,
+      desc: "Javascript build tool",
     },
   ];
 

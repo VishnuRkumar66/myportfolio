@@ -1,6 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
-
+import img from "/appu.jpg";
 const Contact = () => {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center p-2">
@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="p-1 flex items-center justify-between">
           <div>
             <p className="text-[26px] ">Vishnu R Kumar</p>
-            <p className="text-gray-300">Software Engineer</p>
+            <p className="text-gray-300">Front End developer</p>
             <p className="text-[11px] w-52 pt-2 text-gray-400 ">
               Passionate about building web applications and solving real-world
               problems with technology.
@@ -23,7 +23,9 @@ const Contact = () => {
               LinkedIn
             </a>
           </div>
-          <div className="bg-amber-900 w-[90px] h-[90px] rounded-full ml-3"></div>
+          <div className="w-[90px] h-[90px] ">
+            <img src={img} className="rounded-full ml-3" />
+          </div>
         </div>
       </div>
 

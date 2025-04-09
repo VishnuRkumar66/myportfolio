@@ -7,6 +7,7 @@ import hobbies from "../assets/hobbies.jpg";
 import contact from "../assets/contact.png";
 import positive from "../assets/positive.png";
 import { Link } from "react-router-dom";
+
 const MainPage = ({ username }) => {
   const bgImagesTop = [experience, certificate, project, skill];
   const bgImagesBottom = [positive, hobbies, contact];
@@ -21,20 +22,32 @@ const MainPage = ({ username }) => {
 
   return (
     <div className="w-screen bg-black flex flex-col ">
-      <div className="bg-gray-300 pt-29 w-screen ">
-        <div className=" text-black p-6 shadow-lg max-w-screen  flex-col align-bottom">
+      <div
+        className="pt-19  bg-black w-screen"
+        style={{
+          backgroundImage: `url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZ5eWwwbjRpdWM1amxyd3VueHhteTVzajVjeGZtZGJ1dDc4MXMyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/16u7Ifl2T4zYfQ932F/giphy.gif")`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className=" text-white p-6 shadow-lg max-w-screen  flex-col align-bottom">
           <p className="text-3xl">Vishnu R Kumar</p>
-          <p className="text-lg text-gray-700 mb-3">
+          <p className="text-md text-gray-200 mb-3">
             Entry-Level Front-End Developer
           </p>
-          <p className="text-sm sm:text-base text-gray-800 w-full sm:w-[90%]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            amet sint consequatur quibusdam asperiores illum, debitis, non
-            veniam earum eos vero reiciendis in doloremque quo ullam corrupti
-            nisi minima soluta! Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem magni porro, rem assumenda quam vitae
-            maiores, perspiciatis earum tempora quos adipisci fuga iusto!
-            Deleniti doloribus facilis minus, amet officia voluptatibus?
+          <p className="text-[13px] sm:text-[14px] text-white   w-fit sm:w-[90%]">
+            I'm a self-motivated front-end developer with a Computer Diploma and
+            a strong foundation in React, Tailwind CSS, JavaScript, basic
+            Knowlegde in python.
+            <br />
+            After working in the logistics sector, I decided to pursue my
+            passion for technology and have since built multiple real-world
+            projects to bridge the gap and also continuously working to improve
+            my logical reasoning and communication skills.
+            <br /> Though I don't have prior experience in a tech job, I bring a
+            strong work ethic, a learner's mindset, and a deep commitment to
+            leveling up in the IT industry.
           </p>
 
           <div className="flex gap-5 mt-3 ">
@@ -48,7 +61,7 @@ const MainPage = ({ username }) => {
                   "_blank"
                 )
               }
-              className="bg-black/50 text-white text-xl w-[150px] rounded px-4 py-2 shadow-md text-[20px] hover:bg-gray-700 cursor-pointer"
+              className="bg-gray-900 text-white text-xl w-[150px] rounded px-4 py-2 shadow-md text-[20px] hover:bg-gray-700 cursor-pointer"
             >
               ⓘ LinkedIn
             </button>
@@ -59,10 +72,9 @@ const MainPage = ({ username }) => {
         <p>{`Today's Top Picks for ${username}`}</p>
         <div className="flex  flex-wrap m-7 gap-4">
           {topItems.map((item, index) => (
-            <Link to={`/${item}`}>
+            <Link to={`/${item}`} key={index}>
               <div
-                key={index}
-                className={` h-[190px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
+                className={`h-[190px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
                 style={{
                   backgroundImage: `url(${
                     bgImagesTop[index % bgImagesTop.length]
@@ -80,9 +92,8 @@ const MainPage = ({ username }) => {
         <p>{`Continue Watching for ${username}`}</p>
         <div className="flex flex-wrap m-[18px]  gap-7">
           {bottomItems.map((item, index) => (
-            <Link to={`/${item}`}>
+            <Link to={`/${item}`} key={index}>
               <div
-                key={index}
                 className={` h-[200px] w-[200px] flex items-center justify-center rounded cursor-pointer  hover:shadow-lg hover:shadow-red-600 transition-all duration-400 `}
                 style={{
                   backgroundImage: `url(${
