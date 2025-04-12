@@ -11,6 +11,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Positives from "./components/Positives";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const [start, setStart] = useState(0);
@@ -27,6 +28,7 @@ const App = () => {
           <>
             <NavBar />
             <div className="pb-16"></div>
+            <ScrollToTop />
             <Routes>
               <Route
                 path="/myportfolio"

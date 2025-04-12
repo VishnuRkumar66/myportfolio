@@ -7,6 +7,7 @@ import hobbies from "../assets/hobbies.jpg";
 import contact from "../assets/contact.png";
 import positive from "../assets/positive.png";
 import { Link } from "react-router-dom";
+import reacts from "/react.pdf";
 
 const MainPage = ({ username }) => {
   const bgImagesTop = [experience, certificate, project, skill];
@@ -51,9 +52,12 @@ const MainPage = ({ username }) => {
           </p>
 
           <div className="flex gap-5 mt-3 ">
-            <button className="bg-white  text-black rounded px-4 py-2 w-[150px] shadow-md hover:bg-gray-200 text-[20px] cursor-pointer">
-              ▶️ Resume
-            </button>
+            <a href={reacts} target="_blank" rel="noopener noreferrer">
+              <button className="bg-white text-black rounded px-4 py-2 w-[150px] shadow-md hover:bg-gray-200 text-[20px] cursor-pointer">
+                ▶️ Resume
+              </button>
+            </a>
+
             <button
               onClick={() =>
                 window.open(
