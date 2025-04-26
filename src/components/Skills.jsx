@@ -9,7 +9,12 @@ import {
   FaLeaf,
   FaGitSquare,
   FaBolt,
+  FaNodeJs,
+  FaTv,
+  FaMitten,
+  FaPhp,
 } from "react-icons/fa";
+import { FaDatabase, FaPiedPiper, FaR } from "react-icons/fa6";
 
 const Skills = () => {
   const skill = [
@@ -47,7 +52,7 @@ const Skills = () => {
     },
     {
       title: "TailWind",
-      pic: <FaLeaf className="text-[25px] text-green-800 " />,
+      pic: <FaLeaf className="text-[25px] text-blue-500 " />,
       desc: "CSS library",
     },
     {
@@ -57,8 +62,33 @@ const Skills = () => {
     },
     {
       title: "Vite",
-      pic: <FaBolt className="text-[25px] text-violet-700 " />,
+      pic: <FaBolt className="text-[25px] text-yellow-400 " />,
       desc: "Javascript build tool",
+    },
+    {
+      title: "Node.js",
+      pic: <FaNodeJs className="text-[25px] text-green-300 " />,
+      desc: "Runtime Environment",
+    },
+    {
+      title: "React Router",
+      pic: <FaTv className="text-[25px] text-white " />,
+      desc: "Navigation Library",
+    },
+    {
+      title: "CI/CD pipeline",
+      pic: <FaPiedPiper className="text-[25px] text-yellow-400 " />,
+      desc: "Automated build process",
+    },
+    {
+      title: "Redux",
+      pic: <FaR className="text-[25px] text-red-400 " />,
+      desc: "State management",
+    },
+    {
+      title: "PHP",
+      pic: <FaPhp className="text-[30px] text-gray-500 " />,
+      desc: "Scripting language",
     },
   ];
 

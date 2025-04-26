@@ -3,9 +3,9 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 import img from "/appu.jpg";
 const Contact = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center p-2">
-      <div className=" rounded-lg  max-w-[500px] p-5 bg-gray-800">
-        <div className="p-1 flex items-center justify-between">
+    <div className="w-screen h-screen flex flex-col items-center pt-6 ">
+      <div className=" rounded-lg  max-w-[500px] p-4 bg-gray-800">
+        <div className="p-2 flex items-center justify-between">
           <div>
             <p className="text-[26px] ">Vishnu R Kumar</p>
             <p className="text-gray-300">Front End developer</p>

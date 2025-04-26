@@ -4,8 +4,8 @@ const experiences = [
   {
     role: "Frontend Developer",
     company: "Self-Learning",
-    duration: "Sep 2024 - Present",
-    skills: ["React", "Tailwind CSS", "Python", "Data Structures & Algorithms"],
+    duration: "Feb 2024 - Present",
+    skills: ["React", "Javascript", "Tailwind CSS", "Python", "DS&A"],
     description: [
       "Studied and mastered the React framework, including key concepts like hooks and state management.",
       "Developed responsive and user-friendly web applications using React and Tailwind CSS.",
