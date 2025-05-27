@@ -1,5 +1,11 @@
 import React from "react";
-import { FaConnectdevelop, FaDhl, FaGoogle, FaYoutube } from "react-icons/fa";
+import {
+  FaConnectdevelop,
+  FaDhl,
+  FaGoogle,
+  FaHackerrank,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaBuildingColumns } from "react-icons/fa6";
 
 const Certificates = () => {
@@ -34,6 +40,11 @@ const Certificates = () => {
       pic: <FaYoutube className="text-[25px] text-red-600" />,
       desc: "Code with Mosh Programming",
     },
+    {
+      title: "React Developer",
+      pic: <FaHackerrank className="text-[25px] text-green-300" />,
+      desc: "www.hackerrank.com/certificates/134490b4be12",
+    },
   ];
 
   return (
@@ -48,13 +59,13 @@ const Certificates = () => {
         {certificates.map((item, index) => (
           <div
             key={index}
-            className="bg-gray-900 text-left p-4 flex flex-col rounded-2xl h-[190px] min-w-[250px] cursor-pointer shadow-lg shadow-red-500/50 hover:shadow-red-600 duration-300  "
+            className="bg-gray-900 text-left p-4 flex flex-col rounded-2xl h-[190px] min-w-[260px] cursor-pointer shadow-lg shadow-red-500/50 hover:shadow-red-600 duration-300  "
           >
             <div className="mt-3 ml-3" aria-hidden="true">
               {item.pic}
             </div>
             <p className="text-[18px] mt-6 font-extrabold">{item.title}</p>
-            <p className="font-mono max-w-[220px] mt-3 text-[13px]">
+            <p className="font-mono max-w-[220px] mt-3 text-[10px]">
               {item.desc}
             </p>
           </div>

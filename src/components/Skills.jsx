@@ -11,10 +11,9 @@ import {
   FaBolt,
   FaNodeJs,
   FaTv,
-  FaMitten,
   FaPhp,
 } from "react-icons/fa";
-import { FaDatabase, FaPiedPiper, FaR } from "react-icons/fa6";
+import { FaPiedPiper, FaR, FaT } from "react-icons/fa6";
 
 const Skills = () => {
   const skill = [
@@ -42,6 +41,11 @@ const Skills = () => {
       title: "React",
       pic: <FaReact className="text-cyan-400 text-[25px]" />,
       desc: "Frontend framework",
+    },
+    {
+      title: "Typescript",
+      pic: <FaT className="text-cyan-400 text-[25px]" />,
+      desc: "high level language",
     },
   ];
   const library = [
