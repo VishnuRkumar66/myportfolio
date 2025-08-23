@@ -1,4 +1,3 @@
-import React from "react";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 import img from "/appu.jpg";
 const Contact = () => {
