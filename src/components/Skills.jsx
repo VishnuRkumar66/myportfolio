@@ -12,11 +12,22 @@ import {
   FaNodeJs,
   FaTv,
   FaPhp,
+  FaFileCode,
 } from "react-icons/fa";
-import { FaPiedPiper, FaR, FaT } from "react-icons/fa6";
+import { FaC, FaPiedPiper, FaR, FaT } from "react-icons/fa6";
 
 const Skills = () => {
   const skill = [
+    {
+      title: "C#",
+      pic: <FaC className="text-[25px] text-green-400 " />,
+      desc: "High level language",
+    },
+    {
+      title: "ASP.NET Core",
+      pic: <FaFileCode className="text-[25px] text-blue-500" />,
+      desc: "Cross-platform web framework for C#",
+    },
     {
       title: "HTML",
       pic: <FaHtml5 className="text-[25px] text-red-400 " />,
@@ -69,30 +80,11 @@ const Skills = () => {
       pic: <FaBolt className="text-[25px] text-yellow-400 " />,
       desc: "Javascript build tool",
     },
-    {
-      title: "Node.js",
-      pic: <FaNodeJs className="text-[25px] text-green-300 " />,
-      desc: "Runtime Environment",
-    },
-    {
-      title: "React Router",
-      pic: <FaTv className="text-[25px] text-white " />,
-      desc: "Navigation Library",
-    },
+
     {
       title: "CI/CD pipeline",
       pic: <FaPiedPiper className="text-[25px] text-yellow-400 " />,
       desc: "Automated build process",
-    },
-    {
-      title: "Redux",
-      pic: <FaR className="text-[25px] text-red-400 " />,
-      desc: "State management",
-    },
-    {
-      title: "PHP",
-      pic: <FaPhp className="text-[30px] text-gray-500 " />,
-      desc: "Scripting language",
     },
   ];
 

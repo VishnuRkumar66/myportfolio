@@ -35,20 +35,24 @@ const MainPage = ({ username }) => {
         <div className=" text-white p-6 shadow-lg max-w-screen  flex-col align-bottom">
           <p className="text-3xl">Vishnu R Kumar</p>
           <p className="text-md text-gray-200 mb-3">
-            Entry-Level Front-End Developer
+            .NET Full Stack Developer
           </p>
-          <p className="text-[13px] sm:text-[14px] text-white   w-fit sm:w-[90%]">
-            I'm a self-motivated front-end developer with a Computer Diploma and
-            a strong foundation in React, Tailwind CSS, JavaScript, basic
-            Knowlegde in python.
+
+          <p className="text-[13px] sm:text-[14px] text-white w-fit sm:w-[90%]">
+            I'm a self-motivated .NET Full Stack Developer with a Computer
+            Diploma and a solid foundation in C#, ASP.NET Core, and SQL, along
+            with experience in front-end technologies like React, Tailwind CSS,
+            and JavaScript.
             <br />
-            After working in the logistics sector, I decided to pursue my
-            passion for technology and have since built multiple real-world
-            projects to bridge the gap and also continuously working to improve
-            my logical reasoning and communication skills.
-            <br /> Though I don't have prior experience in a tech job, I bring a
-            strong work ethic, a learner's mindset, and a deep commitment to
-            leveling up in the IT industry.
+            After working in the logistics sector, I transitioned into software
+            development to follow my passion for building modern web
+            applications. Since then, I’ve created multiple real-world projects
+            combining both front-end and back-end technologies, and I’m
+            continuously sharpening my problem-solving and communication skills.
+            <br />
+            Though I’m still early in my tech career, I bring a strong work
+            ethic, a learner’s mindset, and a deep commitment to growing as a
+            full-stack developer in the IT industry.
           </p>
 
           <div className="flex gap-5 mt-3 ">
@@ -61,7 +65,7 @@ const MainPage = ({ username }) => {
             <button
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/vishnu-r-kumar66",
+                  "https://www.linkedin.com/in/vishnurkumar67",
                   "_blank"
                 )
               }
