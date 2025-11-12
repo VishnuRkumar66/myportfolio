@@ -7,7 +7,7 @@ import hobbies from "../assets/hobbies.jpg";
 import contact from "../assets/contact.png";
 import positive from "../assets/positive.png";
 import { Link } from "react-router-dom";
-import reacts from "/react.pdf";
+import reacts from "/VishnuRKumar.pdf";
 
 const MainPage = ({ username }) => {
   const bgImagesTop = [experience, certificate, project, skill];

@@ -13,8 +13,9 @@ import {
   FaTv,
   FaPhp,
   FaFileCode,
+  FaDatabase,
 } from "react-icons/fa";
-import { FaC, FaPiedPiper, FaR, FaT } from "react-icons/fa6";
+import { FaC, FaP, FaPiedPiper, FaR, FaT } from "react-icons/fa6";
 
 const Skills = () => {
   const skill = [
@@ -44,6 +45,11 @@ const Skills = () => {
       desc: "Scripting language",
     },
     {
+      title: "Microsoft SQL",
+      pic: <FaDatabase className="text-cyan-400 text-[25px]" />,
+      desc: "Database language",
+    },
+    {
       title: "Python",
       pic: <FaPython className="text-yellow-200 text-[25px]" />,
       desc: "Scripting language",
@@ -71,6 +77,11 @@ const Skills = () => {
       desc: "CSS library",
     },
     {
+      title: "PostMan",
+      pic: <FaP className="text-[25px] text-orange-500 " />,
+      desc: "CSS library",
+    },
+    {
       title: "GIT",
       pic: <FaGitSquare className="text-[25px] text-green-500 " />,
       desc: "Version control System",
@@ -79,12 +90,6 @@ const Skills = () => {
       title: "Vite",
       pic: <FaBolt className="text-[25px] text-yellow-400 " />,
       desc: "Javascript build tool",
-    },
-
-    {
-      title: "CI/CD pipeline",
-      pic: <FaPiedPiper className="text-[25px] text-yellow-400 " />,
-      desc: "Automated build process",
     },
   ];
 
