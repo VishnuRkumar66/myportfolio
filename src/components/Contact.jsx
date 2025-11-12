@@ -13,7 +13,7 @@ const Contact = () => {
               problems with technology.
             </p>
             <a
-              href="https://www.linkedin.com/in/vishnu-r-kumar66"
+              href="https://www.linkedin.com/in/vishnu-r-kumar67"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 flex items-center justify-center hover:scale-105 hover:bg-blue-700 cursor-pointer mt-2 rounded w-32 p-2 transition duration-300"

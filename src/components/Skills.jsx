@@ -9,13 +9,10 @@ import {
   FaLeaf,
   FaGitSquare,
   FaBolt,
-  FaNodeJs,
-  FaTv,
-  FaPhp,
   FaFileCode,
   FaDatabase,
 } from "react-icons/fa";
-import { FaC, FaP, FaPiedPiper, FaR, FaT } from "react-icons/fa6";
+import { FaC, FaP, FaT } from "react-icons/fa6";
 
 const Skills = () => {
   const skill = [
