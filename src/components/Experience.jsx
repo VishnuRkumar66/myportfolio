@@ -1,5 +1,23 @@
 const experiences = [
   {
+    role: "Intern — .NET Full Stack Developer",
+    company: "Faith Infotech Academy, Technopark",
+    duration: "July 2025 - Present",
+    skills: [
+      "C#",
+      "ASP.NET Core MVC",
+      "Entity Framework Core",
+      "SQL Server",
+      "JavaScript",
+    ],
+    description: [
+      "Worked on a team project — Clinic Management System — using ASP.NET Core MVC and SQL Server.",
+      "Developed Admin and Receptionist modules, implementing CRUD operations and authentication.",
+      "Collaborated with team members to integrate modules like Doctor, Pharmacy, and Lab.",
+      "Gained hands-on experience in MVC architecture, model binding, validation, and dependency injection.",
+    ],
+  },
+  {
     role: "Frontend Developer",
     company: "Self-Learning",
     duration: "Feb 2024 - Present",

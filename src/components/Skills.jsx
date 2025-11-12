@@ -11,8 +11,10 @@ import {
   FaBolt,
   FaFileCode,
   FaDatabase,
+  FaGlobe,
+  FaPaperPlane,
 } from "react-icons/fa";
-import { FaC, FaP, FaT } from "react-icons/fa6";
+import { FaC, FaT } from "react-icons/fa6";
 
 const Skills = () => {
   const skill = [
@@ -64,29 +66,44 @@ const Skills = () => {
   ];
   const library = [
     {
-      title: "BootStrap",
-      pic: <FaBootstrap className="text-[25px] text-violet-600 " />,
-      desc: "CSS library",
+      title: "Bootstrap",
+      pic: <FaBootstrap className="text-[25px] text-violet-600" />,
+      desc: "CSS framework for responsive design",
     },
     {
-      title: "TailWind",
-      pic: <FaLeaf className="text-[25px] text-blue-500 " />,
-      desc: "CSS library",
+      title: "ADO.NET",
+      pic: <FaDatabase className="text-[25px] text-blue-600" />,
+      desc: "Data access technology for database interaction",
     },
     {
-      title: "PostMan",
-      pic: <FaP className="text-[25px] text-orange-500 " />,
-      desc: "CSS library",
+      title: "Entity",
+      pic: <FaLeaf className="text-[25px] text-green-600" />,
+      desc: "ORM framework for efficient data handling in .NET",
     },
     {
-      title: "GIT",
-      pic: <FaGitSquare className="text-[25px] text-green-500 " />,
-      desc: "Version control System",
+      title: "Web API",
+      pic: <FaGlobe className="text-[25px] text-sky-600" />,
+      desc: "Framework for building RESTful web services",
+    },
+    {
+      title: "Tailwind CSS",
+      pic: <FaT className="text-[25px] text-blue-400" />,
+      desc: "Utility-first CSS framework",
+    },
+    {
+      title: "Postman",
+      pic: <FaPaperPlane className="text-[25px] text-orange-500" />,
+      desc: "API testing and debugging tool",
+    },
+    {
+      title: "Git",
+      pic: <FaGitSquare className="text-[25px] text-red-500" />,
+      desc: "Version control system",
     },
     {
       title: "Vite",
-      pic: <FaBolt className="text-[25px] text-yellow-400 " />,
-      desc: "Javascript build tool",
+      pic: <FaBolt className="text-[25px] text-yellow-400" />,
+      desc: "Fast JavaScript build tool",
     },
   ];
 

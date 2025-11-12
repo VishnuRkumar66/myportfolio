@@ -4,6 +4,7 @@ import data from "../assets/data.png";
 import port from "../assets/port.png";
 import arc from "../assets/arcade.png";
 import track from "../assets/address.png";
+import clinic from "../assets/clinicProject.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -15,12 +16,38 @@ import {
   FaGitSquare,
   FaBolt,
   FaWrench,
+  FaCogs,
+  FaServer,
 } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaClover } from "react-icons/fa6";
 
 const Projects = () => {
   const projects = [
+    {
+      pic: clinic, // import your image at the top like: import clinic from "../assets/clinic.png";
+      Name: "Clinic Management System",
+      Desc: "A full-stack web application built using ASP.NET Core, ADO.NET, and Entity Framework to manage patient, doctor, and appointment data. It follows a solid layered architecture for better maintainability and scalability.",
+      tools: [
+        {
+          icon: <FaCogs />,
+          Name: "ASP.NET Core Web API",
+        },
+        {
+          icon: <FaDatabase />,
+          Name: "ADO.NET",
+        },
+        {
+          icon: <FaServer />,
+          Name: "Entity Framework",
+        },
+        {
+          icon: <FaHtml5 />,
+          Name: "HTML, CSS, JavaScript",
+        },
+      ],
+    },
+
     {
       pic: track,
       Name: "IP Address Tracker",
